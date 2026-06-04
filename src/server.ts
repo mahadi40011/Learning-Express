@@ -44,7 +44,7 @@ app.get("/", (req: Request, res: Response) => {
   });
 });
 
-app.post("/user", async (req: Request, res: Response) => {
+app.post("/api/users", async (req: Request, res: Response) => {
   const { name, email, password, age } = req.body;
   try {
     const result = await pool.query(
