@@ -13,15 +13,14 @@ const loginUserIntoDB = async (payload: {
     email,
   ]);
   if (userData.rows.length === 0) {
-    throw new Error("Invalid Credential!")
+    throw new Error("Invalid Credential!");
   }
 
-  const user = userData.rows[0]
-  const matchPassword = bcrypt.compare(password, user?.password)
+  const user = userData.rows[0];
+  const matchPassword = await bcrypt.compare(password, user?.password);
   if (!matchPassword) {
     throw new Error("Invalid Password");
   }
-
 };
 
 export const authService = {
