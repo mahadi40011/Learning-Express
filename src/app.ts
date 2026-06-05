@@ -4,6 +4,7 @@ import express, {
   type Response,
 } from "express";
 import { pool } from "./db";
+import { userRouter } from "./modules/user/user.route";
 const app: Application = express();
 
 app.use(express.json());
@@ -17,6 +18,8 @@ app.get("/", (req: Request, res: Response) => {
     developer: "M. H. Mahbub",
   });
 });
+
+app.use("/api/users", userRouter);
 
 app.post("/api/users", async (req: Request, res: Response) => {
   const { name, email, password, age } = req.body;
