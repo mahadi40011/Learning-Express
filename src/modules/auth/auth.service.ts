@@ -1,14 +1,12 @@
 import bcrypt from "bcryptjs";
 import { pool } from "../../db";
-import jwt from "jsonwebtoken"
+import jwt from "jsonwebtoken";
+import config from "../../config/env";
 
 const loginUserIntoDB = async (payload: {
   email: string;
   password: string;
 }) => {
-  // check the user exist --> done
-  // compare the password --> done
-  // generate token
   const { password, email } = payload;
   const userData = await pool.query(`SELECT * FROM users WHERE email=$1`, [
     email,
@@ -22,6 +20,19 @@ const loginUserIntoDB = async (payload: {
   if (!matchPassword) {
     throw new Error("Invalid Password");
   }
+
+  // Generate JWT token
+  const jwtPayload = {
+    id: user.id,
+    name: user.name,
+    email: user.email,
+    is_active: user.is_active,
+  };
+
+  const accessToken = jwt.sign(jwtPayload, config.jwt_secret as string, {
+    expiresIn: "1d",
+  });
+  return { accessToken };
 };
 
 export const authService = {
