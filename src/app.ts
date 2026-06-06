@@ -6,12 +6,19 @@ import express, {
 import { userRouter } from "./modules/user/user.route";
 import { profileRouter } from "./modules/profile/profile.route";
 import { authRouter } from "./modules/auth/auth.route";
-import cookieParser from "cookie-parser"
+import cookieParser from "cookie-parser";
+import cors from "cors";
 import loggerMiddleware from "./middleware/logger.middleware";
+import config from "./config/env";
 
 const app: Application = express();
 
-app.use(cookieParser())
+app.use(
+  cors({
+    origin: config.client_url,
+  }),
+);
+app.use(cookieParser());
 app.use(express.json());
 app.use(express.text());
 app.use(express.urlencoded({ extended: true }));
