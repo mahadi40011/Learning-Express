@@ -37,3 +37,29 @@ Method --> GET, Time --> 1780753856958, URL --> /api/users
 Method --> GET, Time --> 1780753868560, URL --> /api/users
 
 Method --> GET, Time --> 1780753882775, URL --> /api/users
+
+Method --> GET, Time --> 1780758581736, URL --> /api/users
+
+Method --> PUT, Time --> 1780758615195, URL --> /api/users/7
+
+Method --> PUT, Time --> 1780758630805, URL --> /api/users/7
+
+Method --> PUT, Time --> 1780758688216, URL --> /api/users/7
+
+Method --> PUT, Time --> 1780758705500, URL --> /api/users/7
+
+Method --> GET, Time --> 1780758713613, URL --> /api/users
+
+Method --> PUT, Time --> 1780758741226, URL --> /api/users/7
+
+Method --> POST, Time --> 1780758867142, URL --> /api/users
+
+Method --> GET, Time --> 1780758880707, URL --> /api/users
+
+Method --> PUT, Time --> 1780758899593, URL --> /api/users/8
+
+Method --> PUT, Time --> 1780759255301, URL --> /api/users/8
+
+Method --> PUT, Time --> 1780759284599, URL --> /api/users/7
+
+Method --> GET, Time --> 1780759297516, URL --> /api/users

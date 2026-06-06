@@ -33,7 +33,11 @@ const getSingleUserFromDB = async (id: string) => {
 
 const updateUserFromDB = async (payload: IUser, id: string) => {
   const { name, password, age, is_active } = payload;
-  const hashPassword = await bcrypt.hash(password, 10);
+  
+  let hashPassword;
+  if (password) {
+    hashPassword = await bcrypt.hash(password, 10);
+  }
 
   const result = await pool.query(
     `UPDATE users
