@@ -6,10 +6,12 @@ import express, {
 import { userRouter } from "./modules/user/user.route";
 import { profileRouter } from "./modules/profile/profile.route";
 import { authRouter } from "./modules/auth/auth.route";
+import cookieParser from "cookie-parser"
 import loggerMiddleware from "./middleware/logger.middleware";
 
 const app: Application = express();
 
+app.use(cookieParser())
 app.use(express.json());
 app.use(express.text());
 app.use(express.urlencoded({ extended: true }));
