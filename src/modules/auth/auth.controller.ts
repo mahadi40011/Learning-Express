@@ -28,8 +28,9 @@ const loginUser = async (req: Request, res: Response) => {
 
 const refreshToken = async (req: Request, res: Response) => {
   try {
-    const result = await authService.generateRefreshToken(req.cookies);
-    console.log(result);
+    const result = await authService.generateRefreshToken(
+      req.cookies.refreshToken,
+    );
 
     res.status(201).json({
       success: true,
