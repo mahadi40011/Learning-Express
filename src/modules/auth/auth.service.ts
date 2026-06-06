@@ -45,6 +45,11 @@ const loginUserIntoDB = async (payload: {
   return { accessToken, refreshToken };
 };
 
+const generateRefreshToken = async (token: string)=>{
+  console.log(token)
+}
+
 export const authService = {
   loginUserIntoDB,
+  generateRefreshToken,
 };
