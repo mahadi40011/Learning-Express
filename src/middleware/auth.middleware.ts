@@ -2,8 +2,9 @@ import type { NextFunction, Request, Response } from "express";
 import jwt, { type JwtPayload } from "jsonwebtoken";
 import config from "../config/env";
 import { pool } from "../db";
+import type { Role } from "../types";
 
-const authMiddleware = () => {
+const authMiddleware = (...roles: Role[]) => {
   return async (req: Request, res: Response, next: NextFunction) => {
     try {
       const token = req.headers.authorization;

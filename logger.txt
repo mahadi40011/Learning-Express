@@ -101,3 +101,5 @@ Method --> POST, Time --> 1780762295617, URL --> /api/auth/login
 Method --> GET, Time --> 1780762326698, URL --> /api/users
 
 Method --> GET, Time --> 1780762385949, URL --> /api/users
+
+Method --> GET, Time --> 1780762566460, URL --> /api/users
