@@ -7,3 +7,11 @@ Method --> GET, Time --> 1780747157155, URL --> /api/users/4
 Method --> GET, Time --> 1780747666550, URL --> /api/users/8
 
 Method --> GET, Time --> 1780747990461, URL --> /api/users
+
+Method --> GET, Time --> 1780748549995, URL --> /api/users
+
+Method --> POST, Time --> 1780748585395, URL --> /api/auth/login
+
+Method --> GET, Time --> 1780748625401, URL --> /api/users
+
+Method --> GET, Time --> 1780748631282, URL --> /api/users
