@@ -63,3 +63,9 @@ Method --> PUT, Time --> 1780759255301, URL --> /api/users/8
 Method --> PUT, Time --> 1780759284599, URL --> /api/users/7
 
 Method --> GET, Time --> 1780759297516, URL --> /api/users
+
+Method --> POST, Time --> 1780760159841, URL --> /api/users
+
+Method --> POST, Time --> 1780760187804, URL --> /api/users
+
+Method --> POST, Time --> 1780760213682, URL --> /api/users
