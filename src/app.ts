@@ -10,6 +10,7 @@ import cookieParser from "cookie-parser";
 import cors from "cors";
 import loggerMiddleware from "./middleware/logger.middleware";
 import config from "./config/env";
+import globalErrorHandler from "./middleware/globalErrorHandler";
 
 const app: Application = express();
 
@@ -35,5 +36,8 @@ app.get("/", (req: Request, res: Response) => {
 app.use("/api/users", userRouter);
 app.use("/api/profile", profileRouter);
 app.use("/api/auth", authRouter);
+
+// Global Error Handling Middleware
+app.use(globalErrorHandler);
 
 export default app;
