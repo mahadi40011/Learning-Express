@@ -1,4 +1,4 @@
-export type Role = "admin" | "moderator" | "user";
+export type Roles = "admin" | "moderator" | "user";
 
 export const UserRoles = {
   admin: "admin",
