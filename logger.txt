@@ -15,3 +15,9 @@ Method --> POST, Time --> 1780748585395, URL --> /api/auth/login
 Method --> GET, Time --> 1780748625401, URL --> /api/users
 
 Method --> GET, Time --> 1780748631282, URL --> /api/users
+
+Method --> GET, Time --> 1780752664881, URL --> /api/users
+
+Method --> GET, Time --> 1780752690228, URL --> /api/users
+
+Method --> GET, Time --> 1780752772469, URL --> /api/users

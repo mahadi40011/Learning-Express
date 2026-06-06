@@ -1,6 +1,7 @@
 import type { NextFunction, Request, Response } from "express";
 import jwt, { type JwtPayload } from "jsonwebtoken";
 import config from "../config/env";
+import { pool } from "../db";
 
 const authMiddleware = () => {
   return async (req: Request, res: Response, next: NextFunction) => {
@@ -16,6 +17,12 @@ const authMiddleware = () => {
       token,
       config.jwt_secret as string,
     ) as JwtPayload;
+
+    const userData = await pool.query(`SELECT * FROM users WHERE email=$1`, [
+      decoded.email,
+    ]);
+    const user = userData.rows[0];
+    console.log(user);
 
     next();
   };
