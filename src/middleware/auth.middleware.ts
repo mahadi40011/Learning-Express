@@ -25,6 +25,13 @@ const authMiddleware = (...roles: Roles[]) => {
       ]);
       const user = userData.rows[0];
 
+      if (roles.length && !roles.includes(user.role)) {
+       return res.status(403).json({
+         success: false,
+         message: "Access denied. You do not have permission.",
+       });
+      }
+
       if (userData.rows.length === 0) {
         return res.status(404).json({
           success: false,

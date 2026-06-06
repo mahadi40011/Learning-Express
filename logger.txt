@@ -103,3 +103,23 @@ Method --> GET, Time --> 1780762326698, URL --> /api/users
 Method --> GET, Time --> 1780762385949, URL --> /api/users
 
 Method --> GET, Time --> 1780762566460, URL --> /api/users
+
+Method --> GET, Time --> 1780764023228, URL --> /api/users
+
+Method --> GET, Time --> 1780764049554, URL --> /api/users
+
+Method --> POST, Time --> 1780764091681, URL --> /api/users
+
+Method --> POST, Time --> 1780764127490, URL --> /api/users
+
+Method --> POST, Time --> 1780764153454, URL --> /api/auth/login
+
+Method --> GET, Time --> 1780764168786, URL --> /api/users
+
+Method --> GET, Time --> 1780764184942, URL --> /api/users
+
+Method --> POST, Time --> 1780764216584, URL --> /api/auth/login
+
+Method --> GET, Time --> 1780764240881, URL --> /api/users
+
+Method --> GET, Time --> 1780764249329, URL --> /api/users
