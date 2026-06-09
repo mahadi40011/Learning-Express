@@ -147,3 +147,12 @@ Method --> POST, Time --> 1780771146483, URL --> /api/auth/refresh-token
 Method --> GET, Time --> 1780772184269, URL --> /api/users
 Method --> GET, Time --> 1780772197631, URL --> /api/users
 Method --> GET, Time --> 1780772203966, URL --> /api/users
+Method --> GET, Time --> 1781008399488, URL --> /
+Method --> GET, Time --> 1781008400980, URL --> /favicon.ico
+Method --> GET, Time --> 1781008412913, URL --> /api/users
+Method --> GET, Time --> 1781008437104, URL --> /api/users/7
+Method --> GET, Time --> 1781008445023, URL --> /api/users/1
+Method --> GET, Time --> 1781010675247, URL --> /api/users/1
+Method --> GET, Time --> 1781010681326, URL --> /api/users/1
+Method --> GET, Time --> 1781010686210, URL --> /api/users/2
+Method --> GET, Time --> 1781010692506, URL --> /api/users/3
